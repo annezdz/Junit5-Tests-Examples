@@ -1,8 +1,10 @@
 package junit5tests;
 
+import listeners.Listener;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,6 +14,8 @@ import java.util.Map;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
+
+@ExtendWith(Listener.class)
 public class AssertionsTest {
 
     @Test
